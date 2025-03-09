@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+nav {
+  /* Navigation Bar */
+  display: flex;
+  background: #141c24;
+  height: 4vw;
+  width: 100%;
+  justify-content: space-between;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  color: white;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-7,
+.search-container {/* Navigation Bar */
+  display: flex;
+}
+
+.box-1 {/* Amazon Logo */
+  
+  width: 10vw;
+}
+
+.box-2 {/* Location */
+  margin-right: 1vw;
+  width: 7vw;
+}
+.box-2 > .child {
+  color: rgb(218, 218, 218);
+  font-size: 12px;
+  margin: 0.3vw;
+  margin-top: 0.9vw;
+}
+.box-2 > .child > span {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.box-3 {/* Search Bar */
+  width: 70vw;
+  margin-right: 1vw;
+  margin-top: 1.5vh;
+}
+.search-container {
+  align-items: center;
+  border: 2px solid orange;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 400px;
+}
+.category {
+  padding: 5px;
+  border: none;
+  background: #f3f3f3;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 4vw;
+  height: 5.5vh;
+  text-align: center;
+  font-size: 15px;
+}
+.search-input {
+  padding: 10px;
+  border: none;
+  outline: none;
+  height: 5.5vh;
+  width: 50vw;
+  font-size: 15px;
+  padding-left: 20px;
+}
+.search-btn {
+  background: orange;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  height: 5.5vh;
+  width: 3vw;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.box-4 { /* Langauage */
+  width: 8vw;
+  margin-right: 1vw;
+
+}
+.box-4 > span {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 3vh;
+  margin-left: 0.2vw;
+}
+
+.box-5 { /* Account */
+  width: 11vw;
+  margin-right: 1vw;
+  font-size: 12px;
+  padding-top: 2vh;
+}
+.box-5 > span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.box-6 { /* Orders */
+  width: 6vw;
+  margin-right: 1vw;
+  font-size: 12px;
+  padding-top: 2vh;
+}
+.box-6 > span {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.box-7 { /* Cart */
+  width: 7vw;
+  margin-right: 1vw;
+}
+.box-7 > span {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 3vh;
+}
+
+/*----------------------------------------------------------------------------*/
+
+.menu-box,.main-box-1,.main-box-2, .main-box-3, .main-box-5 {
+  display: flex;
+  width: 99%;
+}
+
+.menu-box {
+  height: 3vw;
+  background: #253341;
+  z-index: 100;
+  text-align: center;
+}
+.menu-box>.child {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
+  margin: 0.5vw;
+  margin-top: 1vw;
+}
+
+.main-box-1 {
+  justify-content: space-between;
+  height: 17vw;
+  z-index: 100;
+  text-align: center;
+}
+
+.main-box-2 {
+  justify-content: space-between;
+  height: 55vh;
+  z-index: 100;
+  text-align: center;
+  margin: 0.8vw;
+  margin-top: 30px;
+}
+.main-box-2>.child {
+  height: 55vh;
+  width: 23vw;
+  margin: 0.5vw;
+  background-color: white;
+  margin-top: 0.5vw;
+  box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
+}
+.main-box-2>.child>.child-2 {
+  display: flex;
+  flex-wrap: wrap;
+  isolation: isolate;
+  overflow: hidden;
+  background: white;
+  justify-content: space-around;
+}
+.main-box-2>.child>.child-2>.child-2-1 {
+  display: flex;
+}
+.main-box-2>.child>.child-2>.heaad {
+  width: 100%;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: left;
+  height: 5vh;
+  padding: 1.2vw;
+  margin-bottom: 10px;
+}
+.child-2-1>pre {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+.child-2>p {
+  font-size: 13px;
+  width: 100%;
+  text-align: left;
+  color: rgb(101, 101, 214);
+  margin: 15px;
+  margin-top: 15px;
+}
+
+
+.main-box-3 {
+  justify-content: space-between;
+  height: 38vw;
+  z-index: 100;
+  text-align: center;
+  margin: 0.8vw;
+  flex-direction: column;
+}
+.main-box-3>.child {
+  height: 19vw;
+  width: 99%;
+  margin: 10px;
+  background: white;
+  margin-top: 1vw;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+.main-box-3>.child-1 {
+  height: 19vw;
+  width: 99%;
+  margin: 10px;
+  background: white;
+  margin-top: 1vw;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+.main-box-3>.child>p {
+  width: 100%;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: left;
+  height: 5vh;
+  padding: 1.2vw;
+  margin-bottom: 10px;
+}
+.main-box-3>.child-1>p {
+  width: 100%;
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: left;
+  height: 5vh;
+  padding: 1.2vw;
+  margin-bottom: 10px;
+}
+
+
+.main-box-5 {
+  justify-content: space-evenly;
+  height: 18vw;
+  z-index: 100;
+  text-align: center;
+  border: 1px solid lightcoral;
+  margin: 0.8vw;
+}
+.main-box-5>.child {
+  border: 2px solid green;
+  height: 17vw;
+  width: 50%;
+  margin: 0.5vw;
+  background: red;
+  margin-top: 0.5vw;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+.footer {
+  background: #232F3E;
+  color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+.back-to-top {
+  background: #37475A;
+  padding: 15px;
+}
+.back-to-top a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 10%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+.footer-links div {
+  width: 200px;
+}
+.footer-links h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.footer-links a {
+  display: block;
+  color: #ddd;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.footer-links a:hover {
+  text-decoration: underline;
+}
+.footer-divider {
+  border-top: 1px solid #3a4553;
+  margin: 10px 0;
+}
+.footer-bottom {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  width: 100px;
+  margin-right: 20px;
+}
+.footer-options button {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.footer-services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: left;
+  padding: 20px 10%;
+}
+.footer-services div {
+  width: 200px;
+  margin: 10px;
+}
+.footer-services h3 {
+  font-size: 14px;
+  color: #ddd;
+}
+.footer-services p {
+  font-size: 12px;
+  color: #aaa;
+}
+.footer-copyright {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+}
+.footer-copyright a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+}
+.footer-copyright p {
+  margin-top: 5px;
+  color: #bbb;
+}
